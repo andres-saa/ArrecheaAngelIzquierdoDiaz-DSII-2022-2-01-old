@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: block;
+    align-items: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-gap: 20px;
+    grid-template-areas: "navegacion navegacion"
+                         "aside tarjetas"
+                         "footer footer";
+    background: #d4cfcf;
+    max-width: 1000px;
+    margin:auto;
+                        
+}
+
+.navegacion{
+    grid-area: navegacion;
+    background: #66d7d1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+
+.aside{
+    grid-area: aside;
+    background: #f4f1bb;
+}
+
+.aside div{
+    padding: 10px;
+}
+
+.tarjetas{
+    grid-area: tarjetas;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 20px;
+
+}
+
+footer{
+    background: #ff637d;
+    grid-area: footer;
+}
+
+.tarjeta{
+    position: relative;
+    display: flex;
+    background: black;
+
+}
+.tarjeta div{
+
+    position: absolute;
+    margin:auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    
+
+}
+
+.texto {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+
+    color: #333;
+  }
+.contexto1
+{
+    margin-top: 10px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+footer > div{
+    margin-top: 20px;
+    margin-left:20px;
+    font-size: 15px ;
+    ;
+}
